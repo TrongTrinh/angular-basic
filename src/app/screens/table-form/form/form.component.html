@@ -1,0 +1,30 @@
+<div *ngIf="editUserDataInput">
+  <h2>User Form</h2>
+  <form (ngSubmit)="onHandleSubmit()">
+    <label for="firstName">First Name:</label>
+    <input
+      type="text"
+      id="firstName"
+      [ngModel]="editUserDataInput.firstName"
+      name="firstName"
+    />
+
+    <label for="lastName">Last Name:</label>
+    <input
+      type="text"
+      id="lastName"
+      [ngModel]="editUserDataInput.lastName"
+      name="lastName"
+    />
+
+    <label for="username">User Name:</label>
+    <input
+      type="text"
+      id="username"
+      [ngModel]="editUserDataInput.username"
+      name="username"
+    />
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
